@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Planes de Wavibot para clínicas y peluquerías: automatiza turnos, atención y comunicación con tus clientes usando WhatsApp, Instagram y agentes inteligentes."/>
+      <meta name="keywords" content="Wavibot, chatbot clínicas, chatbot peluquerías, turnos automáticos, WhatsApp para clínicas, WhatsApp para peluquerías, IA salud, IA belleza, atención al cliente, automatización clínicas, automatización peluquerías, inteligencia artificial">
+      <meta name="author" content="Wavibot">
+<meta property="og:title" content="Wavibot | Planes para Clínicas y Peluquerías">
+<meta property="og:description" content="Planes de Wavibot para clínicas y peluquerías: automatiza turnos, atención y comunicación con tus clientes usando WhatsApp, Instagram y agentes inteligentes.">
+<meta property="og:image" content="https://tusitio.com/img/logo.png">
+<meta property="og:url" content="https://tusitio.com/">
+<meta property="og:type" content="website">
+    <!-- TITULO -->
+    <title>Wavibot | Planes para clinicas y peluquerias</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--icon-->
+  <link rel="icon" type="image/png" href="/img/logo.png">
+   <!-- Custom Responsive -->
+    <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        screens: {
+          'max-xl2': {'max': '1298px'},
+          'max-sm2': {'max': '699px'},
+          'custom': '900px',
+        }
+      }
+    }
+  }
+</script>
+
+  <style>
+   body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-100 text-gray-900 min-h-screen flex flex-col">
+  <div class="flex-grow">
+  <!-- Navbar -->
+<nav class="w-full h-16.5 bg-gradient-to-r from-[#0c8f91] to-[#3b82f6] main-navbar shadow-lg">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-14 items-center">
+     <!-- Left: Logo -->
+    <a href="/index.html" class="flex items-center text-2xl font-bold tracking-wide text-[#fff]">
+  <img src="/img/logo.png" alt="Logo Wavibot" class="h-8 w-8 mr-2 rounded-full"/>
+  Wavibot
+</a>
+     <!-- Center: Menu (hidden on mobile) -->
+     <div class="hidden custom:flex space-x-6">
+      <a href="./restaurantes.html" class="text-white hover:text-blue-600 text-s font-semibold" type="button">
+       Restaurantes</a>
+      <a href="./clinicas-peluquerias.html" class="text-white hover:text-blue-600 text-s font-semibold" type="button">
+       Clínicas/Peluquerías</a>
+      <a href="./airbnbs.html" class="text-white hover:text-blue-600 text-s font-semibold" type="button">
+       Airbnbs</a>
+     </div>
+     <!-- Right: Buttons (hidden on mobile) -->
+     <div class="hidden custom:flex items-center space-x-3 text-sm">
+      <a href="/pages/try-agent.html" class="block w-full text-left px-3 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 text-xs font-semibold" type="button">
+      Probar Agente gratis
+     </a>
+  <a href="/index.html#contact" class="bg-blue-800 hover:bg-blue-900 text-white font-semibold py-1.5 px-4 rounded text-xs flex items-center">
+   Contacto
+  </a>
+     </div>
+     <!-- Mobile menu button -->
+     <div class="custom:hidden">
+      <button aria-label="Abrir menú" class="text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-600" id="mobile-menu-button" type="button">
+       <svg aria-hidden="true" class="h-6 w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 6h16M4 12h16M4 18h16"></path>
+       </svg>
+      </button>
+     </div>
+    </div>
+   </div>
+   <!-- Mobile menu, hidden by default -->
+   <div class="hidden custom:hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1">
+     <a href="/pages/restaurantes.html" class="block w-full text-left px-3 py-2 rounded text-white hover:text-blue-600 text-xs font-semibold" type="button">Restaurantes</a>
+
+     <a href="/pages/clinicas-peluquerias.html" class="block w-full text-left px-3 py-2 rounded text-white hover:text-blue-600 text-xs font-semibold" type="button">
+      Clínicas/Peluquerías</a>
+
+     <a href="/pages/airbnbs.html" class="block w-full text-left px-3 py-2 rounded text-white hover:text-blue-600 text-xs font-semibold" type="button">
+      Airbnbs</a>
+
+     <a href="/pages/try-agent.html" class="block w-full text-left px-3 py-2 rounded bg-blue-600 text-white hover:bg-blue-700 text-xs font-semibold" type="button">
+      Probar Agente gratis
+     </a>
+     <a href="/index.html#contact" class="bg-blue-800 hover:bg-blue-900 text-white font-semibold py-1.5 px-4 rounded text-xs flex items-center">
+  Contacto
+</a>
+    </div>
+   </div>
+  </nav>
+  
+  <!-- Plans Section -->
+<section class="plans-container mt-10">
+  <div class="max-w-7xl mx-auto px-4">
+    <!-- Título y subtítulo centrados -->
+    <div class="text-center mb-20">
+      <h2 class="text-4xl font-bold text-gray-900">Nuestros Planes</h2>
+      <p class="text-lg text-gray-600">Elige el plan perfecto para tu negocio</p>
+    </div>
+    <!-- Contenedor de las cartas -->
+    <div class="cards-row grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-12 mx-auto max-w-7xl px-4">
+      <!-- Estándar Plan -->
+    <div class="card-wrapper">
+      <div class="plan-card">
+        <div class="price-header flex flex-col items-center mb-4">
+          <span style="background:#e0e7ff; color:#0077B6; font-weight:600; font-size:0.95rem; padding:4px 16px; border-radius:9999px; display:inline-block; margin-bottom:10px;">
+            Estándar
+          </span>
+          <div class="flex items-center">
+            <span class="text-4xl font-bold leading-none">$200</span>
+            <span class="ml-2 text-xs font-semibold leading-tight">USD/mes</span>
+          </div>
+        </div>
+        <div class="plan-features">
+          <div class="feature">
+            <i class="fas fa-check"></i>
+            <div>Soporte 24/7</div>
+          </div>
+          <div class="feature">
+            <i class="fas fa-check"></i>
+            <div>Asistente telefónico</div>
+          </div>
+          <div class="feature">
+            <i class="fas fa-check"></i>
+            <div>Respuestas automáticas</div>
+          </div>
+          <div class="feature">
+            <i class="fas fa-check"></i>
+            <div>Reservas automáticas con Google Calendar</div>
+          </div>
+          <div class="feature">
+            <i class="fas fa-check"></i>
+            <div>Integración con WhatsApp</div>
+          </div>
+        </div>
+                    <div class="plan-button">
+  <a
+    href="https://wa.me/5493512456934?text=Hola,%20quiero%20más%20información%20sobre%20el%20plan%20Estandar"
+    target="_blank"
+    rel="noopener"
+    class="btn-plan btn-estandar flex justify-center items-center"
+  >
+    Contacta Ahora
+  </a>
+</div>
+      </div>
+    </div>
+            
+            <!-- Avanzado Plan -->
+            <div class="card-wrapper">
+                <div class="plan-card">
+                    <div class="price-header flex flex-col items-center mb-4">
+  <span style="background:#e0e7ff; color:#0077B6; font-weight:600; font-size:0.95rem; padding:4px 16px; border-radius:9999px; display:inline-block; margin-bottom:10px;">
+    Avanzado
+  </span>
+  <div class="flex items-center">
+    <span class="text-4xl font-bold leading-none">$400</span>
+    <span class="ml-2 text-xs font-semibold leading-tight">USD/mes</span>
+  </div>
+  </div>
+                    <div class="plan-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <div>Todo lo incluido en Estándar</div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <div>Asistente telefónico con voz personalizada</div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <div>Análisis de datos y CRM en el texto</div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <div>Integración con Instagram</div>
+                        </div>
+                    </div>
+                    <div class="plan-button">
+  <a
+    href="https://wa.me/5493512456934?text=Hola,%20quiero%20más%20información%20sobre%20el%20plan%20Avanzado"
+    target="_blank"
+    rel="noopener"
+    class="btn-plan btn-estandar flex justify-center items-center"
+  >
+    Contacta Ahora
+  </a>
+</div>
+                </div>
+            </div>
+ 
+            <!-- Cuarta Tarjeta - Premium Adicional -->
+            <div class="card-wrapper">
+                <div class="plan-card">
+<div class="price-header flex flex-col items-center mb-4">
+  <span style="background:#e0e7ff; color:#0077B6; font-weight:600; font-size:0.95rem; padding:4px 16px; border-radius:9999px; display:inline-block; margin-bottom:10px;">
+    Personalizado
+  </span>
+  <div class="flex items-center">
+    <span class="text-xl font-bold leading-none">Precio a definir segun necesidades</span>
+  </div>
+                    </div>
+                    <div class="plan-features">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <div>Diseño y desarrollo de una página web profesional</div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <div>Gestión de campañas publicitarias en Instagram y Facebook</div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <div>Agente Multilingüe</div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <div>Otros extras contactar por WhatsApp</div>
+                        </div>
+                    </div>
+                    <div class="plan-button">
+  <a
+    href="https://wa.me/5493512456934?text=Hola,%20quiero%20más%20información%20sobre%20el%20plan%20Personalizado"
+    target="_blank"
+    rel="noopener"
+    class="btn-plan btn-estandar flex justify-center items-center"
+  >
+    Contacta Ahora
+  </a>
+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </div>
+  
+  <!-- cierre de flex-grow -->
+
+  <!-- Footer -->
+ <footer class="bg-gradient-to-r from-[#0c8f91] to-[#3b82f6] text-[#8cccca] py-8">
+  <div class="max-w-7xl mx-auto px-6 md:px-20 flex flex-col md:flex-row justify-between items-center h-full">
+    <p class="mb-4 md:mb-0 flex items-center justify-center h-full">
+      © 2025 Wavibot. All rights reserved.
+    </p>
+    <div class="flex space-x-6 text-[#0cc4c0] items-center h-full justify-center">
+      <a aria-label="Facebook" class="hover:text-[#8df5ed]" href="https://www.facebook.com/profile.php?id=61576194793278&locale=es_LA" target="_blank">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
+      <a aria-label="Instagram" class="hover:text-[#8df5ed]" href="https://www.instagram.com/wavibot.ia/" target="_blank">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a aria-label="TikTok" class="hover:text-[#8df5ed]" href="https://www.tiktok.com/@wavibot4" target="_blank">
+        <i class="fab fa-tiktok fa-lg"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <script>
+   const menuButton = document.getElementById('mobile-menu-button');
+   const mobileMenu = document.getElementById('mobile-menu');
+
+   menuButton.addEventListener('click', () => {
+     mobileMenu.classList.toggle('hidden');
+   });
+  </script>
+ </body>
+</html>
