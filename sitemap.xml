@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tusitio.com/</loc>
+    <loc>https://vaca-joaquin.github.io/Wavibot/index.html</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://tusitio.com/pages/restaurantes.html</loc>
+    <loc>https://vaca-joaquin.github.io/Wavibot/pages/restaurantes.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tusitio.com/pages/clinicas-peluquerias.html</loc>
+    <loc>https://vaca-joaquin.github.io/Wavibot/pages/clinicas-peluquerias.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tusitio.com/pages/airbnbs.html</loc>
+    <loc>https://vaca-joaquin.github.io/Wavibot/pages/airbnbs.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://tusitio.com/pages/try-agent.html</loc>
+    <loc>https://vaca-joaquin.github.io/Wavibot/pages/try-agent.html</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
