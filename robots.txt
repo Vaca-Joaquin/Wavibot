@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://https://vaca-joaquin.github.io/Wavibot/index.html/sitemap.xml
